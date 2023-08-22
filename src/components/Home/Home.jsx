@@ -1,17 +1,15 @@
-import React from 'react';
-import Navbar from '../Navbar/Navbar.jsx';
-
-import './Home.css';
+import React from "react";
+import "./Home.css"; // Create a corresponding CSS file
 
 const Home = () => {
   return (
-    <section id="home" className="home-section">
-      <Navbar />
-      <div className="home-container">
-        <h1>Welcome to Fossa AI</h1>
-        <p>An AI-powered solution for all your expansion needs! </p>
+    <div className="home-page">
+      <div className="background"></div>
+      <div className="content">
+        <h1 className="title">Welcome to FossaAI</h1>
+        <p className="description">Unlocking the Power of AI</p>
       </div>
-    </section>
+    </div>
   );
 };
 
