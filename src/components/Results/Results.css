@@ -1,0 +1,41 @@
+/* Results.css */
+
+.section {
+  padding: 5rem 0;
+  background-color: #f7d488;
+}
+
+.results-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.result-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+.result-card {
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+  text-align: center;
+}
+
+.result-card img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
+
+.result-card h3 {
+  color: #348aa7;
+  margin-top: 1rem;
+}
+
+.result-card p {
+  color: #525174;
+}

@@ -1,0 +1,77 @@
+
+body, html {
+  margin: 0;
+  padding: 0;
+}
+
+.gradient-background {
+  background: linear-gradient(180deg, rgb(58, 128, 158) 0%, rgb(108, 57, 148) 100%);
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.center-column {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.card {
+  background-color: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 600px;
+  width: 80%;
+}
+
+.title {
+  color: #632c99;
+  font-family: "Karla", Helvetica, sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.rectangle-product-name {
+  margin: 20px;
+  border-radius: 10px;
+  background-color: #f5f5f5;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%; /* Set rectangle width to 100% */
+}
+
+.rectangle-product-desc {
+  position: relative;
+  width: 100%;
+  margin: 20px;
+  border-radius: 10px;
+  background-color: #f5f5f5;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%; /* Set rectangle width to 100% */
+}
+
+.input-box-small {
+  width: 100%;
+  padding-bottom: 5%;
+  border: none;
+  background-color: transparent;
+  font-size: 16px;
+}
+
+.input-box-large {
+  width: 100%;
+  padding-bottom: 20%;
+  border: none;
+  background-color: transparent;
+  font-size: 16px;
+}
+
+.input-box-small:focus, .input-box-large:focus {
+  outline: none;
+}

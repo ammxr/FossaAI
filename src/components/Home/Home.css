@@ -1,0 +1,22 @@
+/* Home.css */
+
+.home-section {
+  background: linear-gradient(to bottom, #44a7ff, #1e3d5e);
+  color: #95d7e6;
+  text-align: center;
+  padding: 10rem 0;
+}
+
+.home-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.home-container h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.home-container p {
+  font-size: 1.2rem;
+}
