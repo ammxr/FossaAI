@@ -1,84 +1,56 @@
-/* Navbar.css */
-
+*{
+  font-family: 'REM', sans-serif;
+  color: black;
+  text-transform: uppercase;
+  font-size: 10px;
+}
 .navbar {
-  background: linear-gradient(to bottom, #44a7ff, #1e3d5e);
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1rem 2rem;
-  z-index: 1000;
+  background-color: transparent;
+  color: black;
+  font-size: 18px;
+  text-align: center;
+  padding: 10px;
+  z-index: 2;
+  font-family: 'REM', sans-serif;
 }
 
-.menu-icon {
-  display: none;
-  flex-direction: column;
+.navbar-content {
+  display: flex;
+  align-items: center;
+}
+
+img {
+  width: 118px;
+  height: auto;
+}
+
+.nav-center {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-item {
+  margin: 0 20px;
   cursor: pointer;
 }
 
-.bar {
-  width: 25px;
-  height: 3px;
+.account-button {
+  margin-right: 5%;
+  padding: 5px 10px;
   background-color: #fff;
-  margin: 3px 0;
-  transition: 0.4s;
-}
-
-.bar.open {
-  transform: rotate(45deg) translate(-3px, 3px);
-}
-
-.bar.open:nth-child(2) {
-  opacity: 0;
-}
-
-.bar.open:nth-child(3) {
-  transform: rotate(-45deg) translate(-3px, -3px);
-}
-
-.nav-links {
-  display: flex;
-  list-style: none;
-}
-
-.nav-links a {
-  text-decoration: none;
-  color: #fff;
-  margin-right: 1rem;
-  transition: color 0.3s;
-}
-
-.nav-links a:hover {
-  color: #f7d488;
-}
-
-@media (max-width: 768px) {
-  .menu-icon {
-    display: flex;
-  }
-
-  .nav-links {
-    display: none;
-    flex-direction: column;
-    position: absolute;
-    top: 70px;
-    right: 0;
-    background: linear-gradient(to bottom, #44a7ff, #1e3d5e);
-    width: 100%;
-    text-align: center;
-    transform: translateX(100%);
-    transition: transform 0.3s;
-  }
-
-  .nav-links.active {
-    transform: translateX(0);
-  }
-
-  .nav-links a {
-    margin: 0;
-    padding: 1rem 0;
-  }
+  color: black;
+  border-radius: 5px;
+  cursor: pointer;
 }

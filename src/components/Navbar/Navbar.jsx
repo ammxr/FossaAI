@@ -1,26 +1,22 @@
-import React, { useState } from 'react';
-import { Link } from "react-router-dom";
+import React from 'react';
 import './Navbar.css';
-
+import logo from '../../assets/fossa_logo.png';
 const Navbar = () => {
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
-
-  const toggleMenu = () => {
-    setIsMenuOpen(!isMenuOpen);
-  };
-
   return (
-    <nav className={`navbar ${isMenuOpen ? 'open' : ''}`}>
-      <div className="menu-icon" onClick={toggleMenu}>
-        <div className={`bar ${isMenuOpen ? 'open' : ''}`}></div>
-        <div className={`bar ${isMenuOpen ? 'open' : ''}`}></div>
-        <div className={`bar ${isMenuOpen ? 'open' : ''}`}></div>
+    <nav className="navbar">
+      <div className="navbar-content">
+        <div className="logo">
+          <img src={logo} alt="Logo" className="logo-image" />
+        </div>
+        <div className="nav-center">
+          <ul className="nav-list">
+            <li className="nav-item">ABOUT</li>
+            <li className="nav-item">TRY NOW</li>
+            <li className="nav-item">CONTACT</li>
+          </ul>
+        </div>
+        <div className="account-button">Account</div>
       </div>
-      <ul className={`nav-links ${isMenuOpen ? 'active' : ''}`}>
-        <li><a href="home">Home</a></li>
-        <li><a href="about">About Us</a></li>
-        <li><a href="trynow">Try Now</a></li>
-      </ul>
     </nav>
   );
 };
