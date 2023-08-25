@@ -1,17 +1,11 @@
+*{
+  font-family: 'REM', sans-serif;
+}
 :root {
   --black: #1E1E1E;
-  --sectionLine: #2f2f2f;
-  --gray: #1f1f1f;
-  --darkGray: #000000;
-  --bluePrimary: #70B6DC;
-  --blueSecondary: #69a8cb;
-  --black : #0e0e0e;
+  --bluePrimary: #59BCD7;
   --white : #fff;
-  --blueCard : #DDF8FE;
-  --boxShadow : 0px 19px 60px rgb(0 0 0 / 8%);
-  --smboxShadow: -79px 51px 60px rgba(0, 0, 0, 0.08);
   --topZIndex: 100;
-  background-color: var(--black);
 }
 body {
   scroll-snap-type: y mandatory;
@@ -29,10 +23,8 @@ section {
   scroll-snap-align: start;
 }
 
-
 .App {
   padding: 0.5rem 3.5rem;
   overflow: hidden;
   color: var(--black);
-  background-color: black;
 }
