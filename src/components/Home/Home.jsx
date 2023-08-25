@@ -1,6 +1,7 @@
 import React from 'react';
 import './Home.css'; // Create this CSS file to style the Home component
 import videoBackground from '../../assets/home_bg_vid.mp4'; // Path to your video file
+
 import Navbar from '../Navbar/Navbar.jsx';
 const Home = () => {
   return (

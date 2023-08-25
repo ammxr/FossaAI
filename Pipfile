@@ -6,6 +6,10 @@ name = "pypi"
 [packages]
 django = "*"
 djangorestframework = "*"
+numpy = "*"
+tensorflow = "*"
+scikit-learn = "*"
+pandas = "*"
 
 [dev-packages]
 

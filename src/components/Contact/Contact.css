@@ -1,7 +1,74 @@
-/* Contact.css */
+.contact-section {
+  background: linear-gradient(var(--black), var(--darkGray));
+  color: #fff;
+}
 
-.section {
-  background-color: #656085;
+.container {
+  margin: 0 auto;
   text-align: center;
-  padding: 3rem;
+}
+
+.contact-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+  animation: slideInUp 1s ease-in-out;
+}
+
+.contact-links svg {
+  display: inline-block;
+  font-size: 24px;
+  fill: var(--bluePrimary);
+  transition: transform 0.3s, color 0.3s;
+}
+
+.contact-links a:hover {
+  transform: scale(1.2);
+  color: var(--bluePrimary);
+}
+
+.github-icon,
+.linkedin-icon,
+.mail-icon {
+  background-color: #fff;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: rotate 2s infinite linear;
+}
+
+.github-icon {
+  margin-right: 30px;
+}
+.linkedin-icon {
+  margin-right: 30px;
+}
+.mail-icon {
+  margin-right: 40px;
+}
+
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
