@@ -9,8 +9,18 @@ h2 {
   font-size: 1rem;
 }
 
+primaryText {
+  font-size: 1rem;
+  color: var(--bluePrimary);
+}
+
 h1 {
-  padding-top: 8rem;
+  padding-top: 25%;
+}
+
+.a-footer{
+  padding-top: 2rem;
+  font-size: 1rem;
 }
 
 p {
@@ -18,6 +28,11 @@ p {
   font-size: 0.8rem;
 }
 
+secondaryText {
+  padding-top: 1rem;
+  font-size: 0.8rem;
+  color: var(--bluePrimary);
+}
 .about-container {
   max-width: 800px;
   text-align: center;
