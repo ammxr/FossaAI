@@ -16,6 +16,11 @@ const TryNow = () => {
               <div className="rectangle-product-desc">
                 <input type="text" placeholder="Product Description" className="input-box-large" />
               </div>
+              <div className="submit">
+                <form action="/results">
+                  <button className="submit-button">SUBMIT</button>
+                </form>
+              </div>
           </div>
         </div>
       </div>

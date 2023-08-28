@@ -10,6 +10,7 @@ numpy = "*"
 tensorflow = "*"
 scikit-learn = "*"
 pandas = "*"
+axios = "*"
 
 [dev-packages]
 

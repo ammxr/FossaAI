@@ -5,7 +5,7 @@ import logo from '../../assets/fossa_logo.png';
 
 const AboutUs = () => {
   return (
-    <section id="about" className="about-section">
+    <section id="about" className="abo`ut-section">
       <Navbar />
       <div className="about-container">
         <h1>ABOUT</h1>

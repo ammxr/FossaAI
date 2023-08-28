@@ -1,3 +1,7 @@
+*{
+  transition: all 0.2s ease-out;
+}
+
 .contact-section {
   background: linear-gradient(var(--black), var(--darkGray));
   color: #fff;

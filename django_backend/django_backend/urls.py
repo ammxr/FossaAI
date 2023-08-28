@@ -21,4 +21,9 @@ from api import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.index),
+    path('home',views.index),
+    path('trynow',views.index),
+    path('about',views.index),
+    path('contact',views.index),
+    path('results', views.results),
 ]

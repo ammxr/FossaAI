@@ -69,3 +69,17 @@
 .input-box-small:focus, .input-box-large:focus {
   outline: none;
 }
+
+.submit-button {
+  padding: 10px 100px;
+  color: white;
+  font-size: 1rem;
+  border: none;
+  background-color: var(--bluePrimary);
+  transition: all 0.2s ease-out;
+  border-radius: 10px 10px 0px 0px;
+}
+
+.submit-button:hover {
+  background-color: #336e7e;
+}
