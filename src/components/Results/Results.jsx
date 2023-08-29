@@ -1,27 +1,30 @@
-import React from 'react';
-import './Results.css';
+import React, { useState, useEffect } from 'react';
+import axios from 'axios';
+
+const baseURL = 'http://127.0.0.1:8000/output';
 
 const Results = () => {
-  const results = [
-    { title: 'Product 1', description: 'Description for Product 1', imageUrl: 'product1.jpg' },
-    { title: 'Product 2', description: 'Description for Product 2', imageUrl: 'product2.jpg' },
-  ];
+  const [post, setPost] = useState(null);
+
+  useEffect(() => {
+    axios.get(baseURL)
+      .then((response) => {
+        console.log(response.data);
+        const dataTest = response.data;
+        setPost(dataTest);
+      })
+      .catch((error) => {
+        console.error('Error fetching data:', error);
+      });
+  }, []);
 
   return (
-    <section id="results" className="section">
-      <div className="results-container">
-        <h2>Results</h2>
-        <div className="result-cards">
-          {results.map((result, index) => (
-            <div key={index} className="result-card">
-              <img src={result.imageUrl} alt={result.title} />
-              <h3>{result.title}</h3>
-              <p>{result.description}</p>
-            </div>
-          ))}
-        </div>
-      </div>
-    </section>
+    <div>
+      <h2>Results</h2>
+      {post && (
+        <p>Recommendation: {post.recommendation}</p>
+      )}
+    </div>
   );
 };
 

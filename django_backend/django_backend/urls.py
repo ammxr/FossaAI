@@ -25,5 +25,6 @@ urlpatterns = [
     path('trynow',views.index),
     path('about',views.index),
     path('contact',views.index),
-    path('results', views.results),
+    path('results',views.index),
+    path('output', views.output),
 ]
