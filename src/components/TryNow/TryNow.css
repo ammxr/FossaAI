@@ -1,4 +1,4 @@
-.gradient-background {
+.tn-gradient-background {
   height: 100%;
   width: 100%;
   position:fixed;
@@ -6,14 +6,14 @@
   margin:0;
 }
 
-.center-column {
+.tn-center-column {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100%;
 }
 
-.card {
+.tn-card {
   background-color: #ffffff;
   border-radius: 20px;
   box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
@@ -25,32 +25,32 @@
   width: 80%;
 }
 
-.title {
+.tn-title {
   color: #59BCD7;
   font-size: 40px;
   font-weight: 700;
   margin-bottom: 20px;
 }
 
-.rectangle-product-name {
-  margin: 20px;
+.tn-rectangle-product-name {
   border-radius: 10px;
   background-color: #f5f5f5;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
   width: 100%;
 }
 
-.rectangle-product-desc {
+.tn-rectangle-product-desc {
   position: relative;
   width: 100%;
-  margin: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
   border-radius: 10px;
   background-color: #f5f5f5;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-  width: 100%; /* Set rectangle width to 100% */
+  width: 100%;
 }
 
-.input-box-small {
+.tn-input-box-small {
   width: 100%;
   padding-bottom: 5%;
   border: none;
@@ -58,7 +58,7 @@
   font-size: 16px;
 }
 
-.input-box-large {
+.tn-input-box-large {
   width: 100%;
   padding-bottom: 20%;
   border: none;
@@ -66,11 +66,11 @@
   font-size: 16px;
 }
 
-.input-box-small:focus, .input-box-large:focus {
+.tn-input-box-small:focus, .tn-input-box-large:focus {
   outline: none;
 }
 
-.submit-button {
+.tn-submit-button {
   padding: 10px 100px;
   color: white;
   font-size: 1rem;
@@ -80,6 +80,6 @@
   border-radius: 10px 10px 0px 0px;
 }
 
-.submit-button:hover {
+.tn-submit-button:hover {
   background-color: #336e7e;
 }

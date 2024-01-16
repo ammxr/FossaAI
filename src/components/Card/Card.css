@@ -1,9 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
-
-* {
-  font-family: 'Inter', sans-serif;
-}
-
 .card-container {
   display: flex;
   justify-content: center;
@@ -48,11 +42,11 @@
 }
 
 
-.card .c-titleFrame {
+.card .c-nameFrame {
   position: relative;
   top: -20px;
   height: 50px;
-  background-color: #ccc;
+  background-color: #8ccee8;
   color: #fff;
   display: flex;
   justify-content: center;
@@ -60,34 +54,14 @@
   border-radius: 0 0 4px 4px;
 }
 
-.card .c-titleFrame h2 {
+.card .c-nameFrame h2 {
   color: #565656;
   padding-top: 4%;
   font-size: 1.2rem;
 }
 
-.card.center-card {
-  width: 45rem;
-  transform: scale(1.2);
-  z-index: 1;
-}
-.card.center-card:hover {
-  width: 45rem;
-  transform: scale(1.2);
-  z-index: 1;
-}
-.card.center-card .c-imageFrame {
+.c-imageFrame {
   background-color: var(--bluePrimary) !important;
-}
-
-.card:not(.center-card) {
-  transform: translateX(40%);
-  filter: blur(10px);
-}
-
-.card.center-card ~ .card {
-  transform: translateX(-40%);
-  filter: blur(10px);
 }
 
 
@@ -96,7 +70,7 @@
   border-radius: 0 0 4px 4px;
   margin-top: -30px;
   padding: 10px;
-  background-color: #ccc;
+  background-color: #8ccee8;
   font-size: 14px;
   font-family: 'Inter';
   font-style: normal;
@@ -105,10 +79,5 @@
   align-items: center;
   text-align: center;
   letter-spacing: 0.055em;
-  color: #867B7B;
-}
-
-.card.center-card {
-  transform-origin: center;
-  transition: transform 0.3s ease;
+  color: #000000;
 }

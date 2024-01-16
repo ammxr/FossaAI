@@ -82,7 +82,7 @@ DATABASES = {
 		'ENGINE': 'django.db.backends.mysql',
 		'NAME': 'fossa',
 		'USER': 'root',
-		'PASSWORD': '99587061',
+		'PASSWORD': '99587061@Ah',
 		'HOST':'localhost',
 		'PORT':'3306',
 	}

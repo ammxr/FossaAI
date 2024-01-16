@@ -12,6 +12,7 @@ const TryNow = () => {
 
     try {
       const response = await axios.get('http://127.0.0.1:8000/output');
+      console.log(response);
       navigate('/results');
     } catch (error) {
       console.error('Error fetching recommendation:', error);
@@ -19,20 +20,20 @@ const TryNow = () => {
   };
 
   return (
-    <div className='t-container'>
+    <div className='tn-container'>
       <Navbar />
-      <div className="gradient-background">
-        <div className="center-column">
-          <div className="card">
-            <div className="title">ENTER YOUR PRODUCT</div>
+      <div className="tn-gradient-background">
+        <div className="tn-center-column">
+          <div className="tn-card">
+            <div className="tn-title">ENTER YOUR PRODUCT</div>
             <form onSubmit={handleSubmit}>
-              <div className="rectangle-product-name">
-                <input type="text" placeholder="Product Name" className="input-box-small" />
+              <div className="tn-rectangle-product-name">
+                <input type="tn-text" placeholder="Product Name" className="tn-input-box-small" />
               </div>
-              <div className="rectangle-product-desc">
-                <input type="text" placeholder="Product Description" className="input-box-large" />
+              <div className="tn-rectangle-product-desc">
+                <input type="tn-text" placeholder="Product Description" className="tn-input-box-large" />
               </div>
-              <div className="submit">
+              <div className="tn-submit">
                 <button type="submit" className="submit-button">SUBMIT</button>
               </div>
             </form>

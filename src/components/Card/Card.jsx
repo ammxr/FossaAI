@@ -1,20 +1,21 @@
 import React from 'react';
 import './Card.css';
 
-const Card = ({ title, thumbnail, description, isCenterCard }) => {
+const Card = ({ thumbnail, name, description, link}) => {
   return (
-    <div className={`card ${isCenterCard ? 'center-card' : ''}`}>
+    <div>
       <div className="c-imageFrame">
-        <img src={thumbnail} alt={title} />
+        <img src={thumbnail} alt={name} />
       </div>
-      <div className="c-titleFrame">
-        <h2>{title}</h2>
+      <div className="c-nameFrame">
+        <h2>{name}</h2>
       </div>
-      {isCenterCard && (
-        <div className="c-descriptionFrame">
-          <p>{description}</p>
-        </div>
-      )}
+      <div className="c-descriptionFrame">
+        <p>{description}</p>
+      </div>
+      <div className="c-link">
+        <p>{link}</p>
+      </div>
     </div>
   );
 };
