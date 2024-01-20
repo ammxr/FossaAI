@@ -83,3 +83,44 @@
 .submit-button:hover {
   background-color: #336e7e;
 }
+
+.r-section {
+  padding: 0%;
+  margin: 0%;
+  color: #fff;
+}
+
+h2 {
+  padding-top: 2rem;
+  font-size: 1rem;
+}
+
+r-primaryText {
+  font-size: 1rem;
+  color: var(--bluePrimary);
+}
+
+h1 {
+  padding-top: 15%;
+}
+
+.r-footer{
+  padding-top: 2rem;
+  font-size: 1rem;
+}
+
+p {
+  padding-top: 1rem;
+  font-size: 0.8rem;
+}
+
+r-secondaryText {
+  padding-top: 1rem;
+  font-size: 0.8rem;
+  color: var(--bluePrimary);
+}
+.r-container {
+  max-width: 800px;
+  text-align: center;
+  margin: 0 auto;
+}

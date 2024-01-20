@@ -13,7 +13,7 @@ import numpy as np
 import os
 import django
 
-def recommendation():
+def recommendation(product_name, product_description):
     # Set the DJANGO_SETTINGS_MODULE environment variable
     os.environ.setdefault("DJANGO_SETTINGS_MODULE", "django_backend.settings")
     django.setup()
@@ -63,7 +63,7 @@ def recommendation():
     siamese_model.fit(train_sequences_padded, y_train_labels, batch_size=64, epochs=10)
 
     # Input Product
-    input_product_name = "garden hose"
+    input_product_name = product_name
 
     input_product_sequence = tokenizer.texts_to_sequences([input_product_name])
     input_product_sequence_padded = pad_sequences(input_product_sequence, maxlen=max_sequence_length, padding='post')

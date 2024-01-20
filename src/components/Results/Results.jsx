@@ -3,15 +3,25 @@ import './Results.css';
 import Navbar from '../Navbar/Navbar.jsx';
 import axios from 'axios';
 import Card from '../Card/Card.jsx';
+import { useLocation } from 'react-router-dom';
 
 const Results = () => {
   const [recommendation, setRecommendation] = useState(null);
-
+  const { state } = useLocation();
+  const { productName, productDescription } = state;
   useEffect(() => {
     // Fetch recommendation data from the Django backend
     const fetchData = async () => {
       try {
-        const response = await axios.get('http://127.0.0.1:8000/output');
+        console.log("THE STATE IS: ", state, " THE PRODUCT NAME IS: ", state.productName, " THE PRODUCT DESCRIPTION IS: ", state.productDescription)
+        const response = await axios.post('http://127.0.0.1:8000/output', {
+          productName,
+          productDescription,
+        }, {
+          headers: {
+            'Content-Type': 'application/json',
+          },
+        });
         setRecommendation(response.data.recommendation);
       } catch (error) {
         console.error('Error fetching recommendation:', error);
